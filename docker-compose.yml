@@ -12,7 +12,6 @@ services:
       - db
     volumes:
       - ./data/www:/www
-      - ./src:/www/racktables/wwwroot/racknews
   db:
     build:
       context: .
