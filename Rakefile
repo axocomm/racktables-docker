@@ -38,7 +38,7 @@ task :build, [:services] do |_, args|
 end
 
 desc 'Start containers'
-task :start do
+task :up do
   d_str = ENV['DETACH'] ? '-d' : ''
   sh "#{export_str($config)} && docker-compose up #{d_str}"
 end
